@@ -12,3 +12,48 @@ function mobileNavMenu() {
     document.getElementById("hamburger").classList.toggle("active");
     document.getElementById("mobileNavOverlay").classList.toggle("active");
 }
+
+const slides = document.querySelectorAll('.slide');
+const prev = document.querySelector('.prev');
+const next = document.querySelector('.next');
+let current = 0;
+let autoSlideInterval;
+const slideDuration = 7000; // 7 seconds
+
+function showSlide(index) {
+  slides.forEach(slide => slide.classList.remove('active'));
+  slides[index].classList.add('active');
+}
+
+function nextSlide() {
+  current = (current + 1) % slides.length;
+  showSlide(current);
+}
+
+function prevSlide() {
+  current = (current - 1 + slides.length) % slides.length;
+  showSlide(current);
+}
+
+function startAutoSlide() {
+  autoSlideInterval = setInterval(nextSlide, slideDuration);
+}
+
+function resetAutoSlide() {
+  clearInterval(autoSlideInterval);
+  startAutoSlide();
+}
+
+// Event listeners for manual navigation
+next.addEventListener('click', () => {
+  nextSlide();
+  resetAutoSlide();
+});
+
+prev.addEventListener('click', () => {
+  prevSlide();
+  resetAutoSlide();
+});
+
+// Start cycling automatically
+startAutoSlide();
