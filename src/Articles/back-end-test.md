@@ -10,6 +10,8 @@ keywords:
   - tt
 tags:
   - ibdtt
+layout:
+  - article.njk
 ---
 T﻿EST
 
