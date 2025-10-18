@@ -20,6 +20,12 @@ let current = 0;
 let autoSlideInterval;
 const slideDuration = 7000; // 7 seconds
 
+// Initialize: set the first slide as active
+function initSlider() {
+  slides.forEach(slide => slide.classList.remove('active'));
+  slides[0].classList.add('active');
+}
+
 function showSlide(index) {
   slides.forEach(slide => slide.classList.remove('active'));
   slides[index].classList.add('active');
@@ -55,5 +61,6 @@ prev.addEventListener('click', () => {
   resetAutoSlide();
 });
 
-// Start cycling automatically
+// Start the slider
+initSlider();
 startAutoSlide();

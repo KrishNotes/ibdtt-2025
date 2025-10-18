@@ -8,39 +8,8 @@ layout: 'base.njk'
 </header>
 <section class="blog-posts">
   <div class="posts-grid">
-    <article>
-      <img src="https://placehold.co/600x400" alt="Blog image">
-      <h3><a href="#">Post Title One</a></h3>
-      <p>A short preview of the post content goes here to give readers a quick idea.</p>
-      <a href="#" class="read-more">Read More →</a>
-    </article>
-
-    <article>
-      <img src="https://placehold.co/600x400" alt="Blog image">
-      <h3><a href="#">Post Title Two</a></h3>
-      <p>This is another sample post excerpt that keeps readers curious to read more.</p>
-      <a href="#" class="read-more">Read More →</a>
-    </article>
-
-    <article>
-      <img src="https://placehold.co/600x400" alt="Blog image">
-      <h3><a href="#">Post Title Three</a></h3>
-      <p>A brief snippet from your most recent article that introduces the topic clearly.</p>
-      <a href="#" class="read-more">Read More →</a>
-    </article>
-
-    <article>
-      <img src="https://placehold.co/600x400" alt="Blog image">
-      <h3><a href="#">Post Title Two</a></h3>
-      <p>This is another sample post excerpt that keeps readers curious to read more.</p>
-      <a href="#" class="read-more">Read More →</a>
-    </article>
-
-    <article>
-      <img src="https://placehold.co/600x400" alt="Blog image">
-      <h3><a href="#">Post Title Three</a></h3>
-      <p>A brief snippet from your most recent article that introduces the topic clearly.</p>
-      <a href="#" class="read-more">Read More →</a>
-    </article>
+    {%- for post in collections.ibdtt | reverse -%}
+      {% include 'regularArticle.njk' %}
+    {%- endfor -%}
   </div>
 </section>

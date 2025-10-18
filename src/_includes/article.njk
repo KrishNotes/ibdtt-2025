@@ -1,0 +1,25 @@
+---
+layout: 'base.njk'
+---
+<main class="blog-article">
+  <div class="container">
+    <!-- Blog Post Header -->
+    <article class="post">
+      <h1 class="post-title">{{title}}</h1>
+      <p class="post-meta">By <strong>{{author}}</strong> | {{date | postDate}}</p>
+      <p class="post-meta"><a href="/Articles">See Other Articles</a></p>
+
+      <img src="{{image}}" alt="Blog Featured Image" class="post-image">
+
+      <!-- Blog Content -->
+      <div class="post-content">
+        {{ content | safe }}
+      </div>
+
+      <!-- Blog Tags & Navigation -->
+      <div class="post-footer">
+        <p class="tags">Tags: {{keywords}}</p>
+      </div>
+    </article>
+  </div>
+</main>
