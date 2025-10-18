@@ -1,0 +1,28 @@
+backend:
+  name: git-gateway
+  branch: main
+
+publish_mode: editorial_workflow
+
+local_backend: true
+
+logo_url: https://ibdtt.netlify.app/assets/ibdtt.png
+
+media_folder: "public/assets"
+public_folder: "/assets"
+
+collections:
+  - name: "Articles"
+    label: "Articles"
+    folder: "Articles"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Author", name: "author", widget: "string" }
+      - { label: "Image", name: "image", widget: "image" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Keywords", name: "keywords", widget: "list" }
+      - { label: "Tags", name: "tags", widget: "list", default: ["ibdtt"] }
