@@ -14,7 +14,7 @@ public_folder: "/assets"
 collections:
   - name: "Articles"
     label: "Articles"
-    folder: "Articles"
+    folder: "src/Articles"
     create: true
     slug: "{{slug}}"
     fields:
