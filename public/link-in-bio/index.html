@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Link in Bio</title>
     <link rel="stylesheet" href="/Styles/style.css">
+    <!-- Netlify Identity Widget -->
+        <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     <!--FONTS-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -62,6 +64,19 @@
   </div>
 </footer>
 
+    <script>
+        // Initialize Netlify Identity
+        if (window.netlifyIdentity) {
+        window.netlifyIdentity.on('init', user => {
+            if (!user) {
+            window.netlifyIdentity.on('login', () => {
+                document.location.href = '/admin/';
+            });
+            }
+        });
+        window.netlifyIdentity.init();
+        }
+  </script>
     <script src="/app.js"></script>
 </body>
 </html>
