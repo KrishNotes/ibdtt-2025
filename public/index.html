@@ -135,7 +135,7 @@
     <div class="footer-links">
       <h4>Quick Links</h4>
       <ul>
-        <li><a href="#aboutIBD">What is IBD</a></li>
+        <li><a href="/#aboutIBD">What is IBD</a></li>
         <li><a href="/#team">Our Team</a></li>
         <li><a href="/Articles">Articles</a></li>
         <li><a href="/Link-in-Bio">Link in Bio</a></li>
@@ -158,6 +158,8 @@
   </div>
 </footer>
 
+    <button id="scrollTopBtn"><i class="fa-solid fa-arrow-up"></i></button>
+    <script src="/app.js"></script>
     <script>
         // Initialize Netlify Identity
         if (window.netlifyIdentity) {
@@ -170,7 +172,23 @@
         });
         window.netlifyIdentity.init();
         }
+
+        const scrollBtn = document.getElementById("scrollTopBtn");
+
+        // Show button after scrolling down 300px
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 150) {
+            scrollBtn.style.display = 'block';
+            } else {
+            scrollBtn.style.display = 'none';
+            }
+        });
+
+        // Smooth scroll to top
+        scrollBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
   </script>
-    <script src="/app.js"></script>
 </body>
 </html>

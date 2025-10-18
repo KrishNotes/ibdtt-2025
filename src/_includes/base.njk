@@ -18,6 +18,8 @@
     {% include 'nav.njk' %}
     {{content | safe}}
     {% include 'footer.njk' %}
+    <button id="scrollTopBtn"><i class="fa-solid fa-arrow-up"></i></button>
+    <script src="/app.js"></script>
     <script>
         // Initialize Netlify Identity
         if (window.netlifyIdentity) {
@@ -30,7 +32,23 @@
         });
         window.netlifyIdentity.init();
         }
+
+        const scrollBtn = document.getElementById("scrollTopBtn");
+
+        // Show button after scrolling down 300px
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 150) {
+            scrollBtn.style.display = 'block';
+            } else {
+            scrollBtn.style.display = 'none';
+            }
+        });
+
+        // Smooth scroll to top
+        scrollBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
   </script>
-    <script src="/app.js"></script>
 </body>
 </html>
