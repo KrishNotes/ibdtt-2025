@@ -64,3 +64,4 @@ prev.addEventListener('click', () => {
 // Start the slider
 initSlider();
 startAutoSlide();
+

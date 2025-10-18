@@ -108,7 +108,7 @@
   /* Dropdown Menu */
   .side-menu {
     position: fixed;
-    top: 0vh; /* directly under navbar */
+    top: -4vh; /* directly under navbar */
     left: 0;
     width: 100%;
     background: #673d93;
@@ -821,7 +821,8 @@
     position: fixed;
     bottom: 20px;
     right: 15px;
-    padding: 16px;
+    width: 55px;
+    height: 55px;
     font-size: 15px;
     background-color: #6a0dad;
     color: white;
@@ -838,3 +839,5 @@
     background-color: #4b0082;
     transform: scale(1.1);
   }
+
+

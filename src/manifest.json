@@ -1,0 +1,26 @@
+{
+    "name": "IBD TT",
+    "short_name": "IBD TT",
+    "start_url": "/",
+    "background_color": "#efe9f8",
+    "theme_color": "#8841fa",
+    "display": "standalone",
+    "icons": [
+        {
+            "src": "/assets/ibdtt-circle.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "/assets/ibdtt-circle.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/assets/ibdtt-circle.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ]
+}
