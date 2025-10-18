@@ -1,7 +1,14 @@
 ---
-title: More Articles Coming Soon 3
-description: COMING SOON 2025!
-image: https://images.unsplash.com/photo-1494597564530-871f2b93ac55?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1113
-tags: [ ibdtt, featured ]
+title: Back end Test
+description: Test
+author: Krish Beachoo
+image: /assets/krish.png
+date: 2025-10-18T03:40:04.775Z
+keywords:
+  - test
+  - ibd
+  - tt
+tags:
+  - ibdtt
 layout: article.njk
 ---
