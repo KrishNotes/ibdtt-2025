@@ -27,3 +27,14 @@ collections:
       - { label: "Keywords", name: "keywords", widget: "list" }
       - { label: "Tags", name: "tags", widget: "list", default: ["ibdtt"] }
       - { label: "Layout", name: "layout", widget: "string", default: "article.njk" }
+
+  - name: "Link-in-Bio"
+    label: "Link-in-Bio"
+    folder: "src/Link-in-Bio"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Image", name: "image", widget: "image" }
+      - { label: "Link", name: "link", widget: "string" }
+      - { label: "Layout", name: "layout", widget: "string", default: "linkinbio.njk" }

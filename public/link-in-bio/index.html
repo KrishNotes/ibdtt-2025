@@ -32,7 +32,101 @@
     <a href="/#aboutIBD">About IBD</a>
     <a href="/Articles">Articles</a>
   </div>
-    
+    <style>
+/* Main wrapper to center everything and limit width */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 900px; /* keeps grid centered on large screens */
+}
+
+/* Profile section */
+.profile {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.profile-pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.profile h1 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.profile p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Grid section */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  width: 100%;
+  max-width: 700px; /* ensures grid is centered nicely */
+}
+
+.grid-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.grid-item img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.grid-item:hover img {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+/* Subtle overlay */
+.grid-item::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0);
+  transition: background 0.3s ease;
+}
+
+.grid-item:hover::after {
+  background: rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  body {
+    padding: 20px 10px;
+  }
+
+  .grid {
+    gap: 6px;
+  }
+}
+</style>
+<div class="container">
+  <header class="profile">
+    <img src="https://placehold.co/100x100" alt="Profile photo" class="profile-pic">
+    <h1>@yourusername</h1>
+    <p>Explore the links behind my posts 👇</p>
+  </header>
+
+  <section class="grid"></section>
+</div>
+
     <footer class="footer">
   <div class="footer-content">
     <div class="footer-about">
@@ -60,6 +154,7 @@
   </div>
 
   <div class="footer-bottom">
+    <p>Coded with ❤️ by Krish</p><br>
     <p>&copy; 2025 Project IBD TT — All Rights Reserved.</p>
   </div>
 </footer>
