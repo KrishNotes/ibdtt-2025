@@ -125,6 +125,28 @@
   background: rgba(0, 0, 0, 0.15);
 }
 
+.socialLinks {
+    margin-top: 4vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.socialLinks a {
+  padding: 10px 20px;
+  border: 2px solid #8e57ca;
+  color: #8e57ca;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 500;
+  transition: 0.2s ease-in-out;
+}
+
+.socialLinks a:hover {
+  background-color: #8e57ca;
+  color: white;
+}
+
 /* Responsive tweaks */
 @media (max-width: 600px) {
   body {
@@ -141,6 +163,10 @@
     <img src="/assets/ibdtt.png" alt="Profile photo" class="profile-pic">
     <h1>@ibd.tt</h1>
     <p>Explore the links behind our posts 👇</p>
+    <div class="socialLinks">
+      <a target="_blank" href="https://www.instagram.com/ibd.tt/"><i class="fa-brands fa-instagram"></i> Our Instagram Page</a>
+      <a target="_blank" href="mailto:ibdtt.mail@gmail.com"><i class="fa-regular fa-envelope"></i> Email Us</a>
+    </div>
   </header>
 
   <section class="grid">      <a target="_blank" href="/No-Article-Link-In-Bio" class="grid-item">
