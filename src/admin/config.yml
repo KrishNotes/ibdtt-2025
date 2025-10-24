@@ -36,5 +36,6 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Image", name: "image", widget: "image" }
-      - { label: "Link", name: "link", widget: "string" }
+      - { label: "Link", name: "link", widget: "string", default: "/No-Article-Link-In-Bio" }
       - { label: "Layout", name: "layout", widget: "string", default: "linkinbio.njk" }
+      - { label: "Tags", name: "tags", widget: "list", default: ["linkinbio"] }

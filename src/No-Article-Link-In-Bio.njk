@@ -1,0 +1,55 @@
+---
+title: No Article Found 🥺
+layout: base.njk
+---
+<style>
+.no-article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+  background-color: #f9fafb;
+  padding: 20px;
+}
+
+.no-article-content {
+  text-align: center;
+  max-width: 600px;
+  background: white;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.no-article-content h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.no-article-content p {
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.back-btn {
+  display: inline-block;
+  background-color: #fb4b4b;
+  color: white;
+  text-decoration: none;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+</style>
+<section class="no-article">
+  <div class="no-article-content">
+    <h2>No Articles Found 🥺</h2>
+    <p>
+      The post you clicked on doesn’t have a respective article on 
+      <strong>ibdtt.org</strong>.
+    </p>
+    <a href="/Link-In-Bio" class="back-btn"><i class="fa-solid fa-arrow-left"></i> Go Back to Posts</a>
+  </div>
+</section>

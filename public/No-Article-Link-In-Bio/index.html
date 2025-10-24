@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Link in Bio</title>
+    <title>No Article Found 🥺</title>
     <link rel="stylesheet" href="/Styles/style.css">
-    <meta property="og:title" content="Link in Bio">
+    <meta property="og:title" content="No Article Found 🥺">
     <meta property="og:site_name" content="IBD TT">
     <meta property="og:image" content="https://i.imgur.com/I6JA043.png">
     <meta property="og:description" content="">
@@ -51,104 +51,56 @@
     <a href="/Contact">Contact Us!</a>
   </div>
     <style>
-/* Main wrapper to center everything and limit width */
-.container {
+.no-article {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  width: 100%;
-  max-width: 900px; /* keeps grid centered on large screens */
-  margin-top: 18vh;
+  min-height: 70vh;
+  background-color: #f9fafb;
+  padding: 20px;
 }
 
-/* Profile section */
-.profile {
+.no-article-content {
   text-align: center;
-  margin-bottom: 30px;
+  max-width: 600px;
+  background: white;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.profile-pic {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 10px;
+.no-article-content h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #333;
 }
 
-.profile h1 {
-  font-size: 1.2rem;
-  font-weight: 600;
+.no-article-content p {
+  color: #555;
+  margin-bottom: 25px;
 }
 
-.profile p {
-  font-size: 0.9rem;
-  color: #666;
-}
-
-/* Grid section */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-  width: 100%;
-  max-width: 700px; /* ensures grid is centered nicely */
-}
-
-.grid-item {
-  position: relative;
-  overflow: hidden;
-  border-radius: 4px;
-}
-
-.grid-item img {
-  width: 100%;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-  transition: transform 0.3s ease;
-}
-
-.grid-item:hover img {
-  transform: scale(1.05);
-  cursor: pointer;
-}
-
-/* Subtle overlay */
-.grid-item::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0);
+.back-btn {
+  display: inline-block;
+  background-color: #fb4b4b;
+  color: white;
+  text-decoration: none;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border-radius: 8px;
   transition: background 0.3s ease;
 }
-
-.grid-item:hover::after {
-  background: rgba(0, 0, 0, 0.15);
-}
-
-/* Responsive tweaks */
-@media (max-width: 600px) {
-  body {
-    padding: 20px 10px;
-  }
-
-  .grid {
-    gap: 6px;
-  }
-}
 </style>
-<div class="container">
-  <header class="profile">
-    <img src="/assets/ibdtt.png" alt="Profile photo" class="profile-pic">
-    <h1>@ibd.tt</h1>
-    <p>Explore the links behind our posts 👇</p>
-  </header>
-
-  <section class="grid">      <a target="_blank" href="/No-Article-Link-In-Bio" class="grid-item">
-        <img src="https://i.imgur.com/U5e6HAN.jpeg" alt="Introducing IBDTT">
-      </a>
+<section class="no-article">
+  <div class="no-article-content">
+    <h2>No Articles Found 🥺</h2>
+    <p>
+      The post you clicked on doesn’t have a respective article on 
+      <strong>ibdtt.org</strong>.
+    </p>
+    <a href="/Link-In-Bio" class="back-btn"><i class="fa-solid fa-arrow-left"></i> Go Back to Posts</a>
+  </div>
 </section>
-</div>
-
     <footer class="footer">
   <div class="footer-content">
     <div class="footer-about">

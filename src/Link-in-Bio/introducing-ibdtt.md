@@ -1,6 +1,7 @@
 ---
 title: Introducing IBDTT
 image: https://i.imgur.com/U5e6HAN.jpeg
-link: https://ibdtt.org/
+link: /No-Article-Link-In-Bio
 layout: linkinbio.njk
+tags: linkinbio
 ---
