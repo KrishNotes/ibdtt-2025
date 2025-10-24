@@ -30,7 +30,7 @@ collections:
 
   - name: "Link-in-Bio"
     label: "Link-in-Bio"
-    folder: "src/Link-in-Bio"
+    folder: "src/LinkinBio"
     create: true
     slug: "{{slug}}"
     fields:
